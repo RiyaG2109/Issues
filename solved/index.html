@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+      <form action="" id="form" method="post">
+            <h1>Register</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <div class="error" id="username-error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <div class="error" id="email-error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error" id="password-error"></div>
+            </div>
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <div class="error" id="cpassword-error"></div>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <div class="radio-group inline">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="error" id="gender-error"></div>
+            </div>
+            <div id="conditionalButton">
+                <button type="submit" id="submitButton" onclick="registerUser(event)">Register</button>
+            </div>
+        </form>
+        <br/><br/>
+    </div>
+
+    <h1 id="message"></h1>
+
+    <div id="userList">
+
+        
+    </div>
+
+    <div id="results"></div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
+
+
+
